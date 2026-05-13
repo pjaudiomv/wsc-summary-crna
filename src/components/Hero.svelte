@@ -58,7 +58,7 @@
             <span class="text-burgundy">WSC 2026</span> · Day-by-day decisions, surveys, motions and elections — <em class="text-teal">written up</em> for the Carolina Region.
           </div>
           <p class="font-body text-ink-soft mt-6 max-w-xl text-lg leading-relaxed">
-            148 voting members. 47 countries. 31 languages. 78,945 weekly meetings. A new strategic plan, two newly seated regions, and — for our neighbors next door in the North Carolina Region — a
+            148 voting members. 47 countries. 31 languages. 78,945 weekly meetings. A new strategic plan, two newly seated regions, and — from our neighbors next door in the North Carolina Region — a
             delegate elected to the World Board. This page collects what mattered and why.
           </p>
         </div>

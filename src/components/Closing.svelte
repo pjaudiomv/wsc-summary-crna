@@ -18,7 +18,7 @@
     <Reveal delay={150} class="lg:col-span-5">
       <p class="font-body text-cream/85 text-lg leading-relaxed">
         That phrase showed up on the cover of every printed summary handed out this week. It's not decoration — it's a job description. Thank you for the trust you placed in us as your RD and AD.
-        Whatever shape the next two years of Carolina Region service takes, we want to be in it with you.
+        Whatever shape the next three years of Carolina Region service takes, we want to be in it with you.
       </p>
     </Reveal>
   </div>
