@@ -25,7 +25,7 @@
 
       <Reveal delay={220} class="mt-10">
         <figure class="bg-cream relative inline-block max-w-sm rotate-[-2.5deg] p-3 pb-12 shadow-[6px_6px_0_var(--color-ink)]">
-          <img src={poster} alt="Patrick standing in front of the 50 Years of WSC commemorative poster" loading="lazy" class="block h-auto w-full" />
+          <img src={poster} alt="Patrick standing in front of the 50 Years of WSC commemorative poster" width="3562" height="4284" loading="lazy" decoding="async" class="block h-auto w-full" />
           <figcaption class="text-ink/70 font-display absolute right-0 bottom-2 left-0 px-3 text-center text-sm italic">
             Patrick at the <span class="text-burgundy">50 Years of WSC</span> poster · 1976 — 2026
           </figcaption>

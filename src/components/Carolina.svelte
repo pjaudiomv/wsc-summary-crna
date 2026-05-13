@@ -37,7 +37,15 @@
       <Reveal delay={220} class="mt-12">
         <div class="grid items-center gap-8 lg:grid-cols-12">
           <figure class="bg-cream rotate-[1.5deg] p-3 pb-10 shadow-[8px_8px_0_rgba(255,255,255,0.08)] lg:col-span-7">
-            <img src={table} alt="Four delegates from the Carolina Region and the North Carolina Region seated together at the conference table" loading="lazy" class="block h-auto w-full" />
+            <img
+              src={table}
+              alt="Four delegates from the Carolina Region and the North Carolina Region seated together at the conference table"
+              width="3392"
+              height="4066"
+              loading="lazy"
+              decoding="async"
+              class="block h-auto w-full"
+            />
             <figcaption class="text-ink/80 font-display mt-3 px-2 text-sm italic">
               At the table — <span class="text-burgundy font-semibold not-italic">Carolina Region</span> (Patrick J., RD · Jody T., AD) seated with
               <span class="text-burgundy font-semibold not-italic">North Carolina Region</span> (Jacob S., RD · Jonathan B., AD). Four delegates, one corner of the room.
