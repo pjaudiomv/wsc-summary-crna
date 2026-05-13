@@ -55,7 +55,7 @@
       <div class="rise mt-10 grid gap-8 lg:grid-cols-12" style="animation-delay:0.35s">
         <div class="lg:col-span-7">
           <div class="font-display text-ink text-3xl leading-tight sm:text-4xl">
-            <span class="text-burgundy">WSC 2026</span> · Day-by-day decisions, surveys, motions and elections — <em class="text-teal">written up</em> for the Carolina Region members back home.
+            <span class="text-burgundy">WSC 2026</span> · Day-by-day decisions, surveys, motions and elections — <em class="text-teal">written up</em> for the Carolina Region.
           </div>
           <p class="font-body text-ink-soft mt-6 max-w-xl text-lg leading-relaxed">
             148 voting members. 47 countries. 31 languages. 78,945 weekly meetings. A new strategic plan, two newly seated regions, and — for our neighbors next door in the North Carolina Region — a

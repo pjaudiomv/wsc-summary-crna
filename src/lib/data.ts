@@ -414,7 +414,7 @@ export const elected = {
     { name: 'Eduardo G', region: 'HOW Brazil Region' },
     { name: 'Hammed A-T', region: 'Kuwait Region' },
     { name: 'Jade T', region: 'Southern California Region' },
-    { name: 'Jessica B', region: 'North Carolina Region', ncRegion: true },
+    { name: 'Jessica B', region: 'North Carolina Region · SEZF Zonal Contact', sezf: true },
     { name: 'Jorge M', region: 'Colombia Region' },
     { name: 'Michael B', region: 'Volunteer Region' },
     { name: 'Pam T', region: 'OK Region' },
@@ -540,10 +540,10 @@ export const newIdeaTop = [
 export const carolinasItems = [
   {
     type: 'elected',
-    region: 'North Carolina Region',
+    region: 'NC Region member · SEZF Zonal Contact',
     title: 'Jessica B. — Elected to the World Board',
     detail:
-      'The neighboring North Carolina Region had its delegate elected to the 10-seat World Board. She joins members from Connecticut, Northern New Jersey, HOW Brazil, Kuwait, Southern California, Colombia, Volunteer, OK, and Israel regions. Big news for the Carolinas — and a service relationship to lean on for our region in the cycle ahead.'
+      'Jessica B. — a member of the North Carolina Region and Zonal Contact for the Southeast Zonal Forum (the zone the Carolina Region belongs to) — was elected to one of the 10 World Board seats up this cycle. A direct line into world services for our zone for the next three years.'
   },
   {
     type: 'nominated',
@@ -597,7 +597,7 @@ export const sections = [
   { id: 'cover', label: 'Cover', short: '01' },
   { id: 'glance', label: 'At a Glance', short: '02' },
   { id: 'theme', label: 'Our Common Welfare', short: '03' },
-  { id: 'carolina', label: 'From the NC Region', short: '04' },
+  { id: 'carolina', label: 'SEZF & NC Region', short: '04' },
   { id: 'decided', label: 'What We Decided', short: '05' },
   { id: 'failed', label: "What Didn't Pass", short: '06' },
   { id: 'survey', label: 'What Members Want', short: '07' },

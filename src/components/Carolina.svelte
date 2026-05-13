@@ -17,17 +17,18 @@
       <div class="grid items-end gap-8 lg:grid-cols-12">
         <div class="lg:col-span-8">
           <Reveal>
-            <div class="text-marigold font-mono text-[11px] tracking-[0.32em] uppercase">§ 04 · Across the state line</div>
+            <div class="text-marigold font-mono text-[11px] tracking-[0.32em] uppercase">§ 04 · Our zone, our neighbors</div>
             <h2 class="font-display mt-3 text-[clamp(2.5rem,6vw,5rem)] leading-[0.95]">
-              <span class="text-cream italic">News from</span><br />
-              <span class="text-marigold">the North Carolina Region.</span>
+              <span class="text-cream italic">From the</span><br />
+              <span class="text-marigold">SEZF &amp; the NC Region.</span>
             </h2>
           </Reveal>
         </div>
         <div class="lg:col-span-4">
           <Reveal delay={120}>
             <p class="font-body text-cream/80 text-base leading-relaxed">
-              Three newsworthy moments — worth flagging because the Carolinas share members, sponsorships, and conventions across the state line.
+              Three newsworthy moments — one from our Southeast Zonal Forum (the zone Carolina belongs to), two from our neighbor next door. Worth flagging because the Carolinas share members,
+              sponsorships, and conventions across the state line.
             </p>
           </Reveal>
         </div>

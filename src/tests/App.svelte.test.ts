@@ -25,13 +25,13 @@ describe('WSC 2026 report', () => {
     expect(screen.getAllByText(/WSC 2026/i).length).toBeGreaterThan(0);
   });
 
-  test('renders the Carolinas section with the Patrick / NC Region distinction', () => {
+  test('renders the SEZF / NC Region section', () => {
     render(App);
-    expect(screen.getByText(/News from/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/From the/i).length).toBeGreaterThan(0);
     expect(screen.getByText(/Jessica B\. — Elected to the World Board/i)).toBeInTheDocument();
-    // "Carolina Region" and "North Carolina Region" appear in <em>s inside the intro para;
-    // verify each fragment shows up somewhere on the page.
+    // "Carolina Region" and "North Carolina Region" and SEZF references appear across the page.
     expect(screen.getAllByText(/Carolina Region/i).length).toBeGreaterThan(0);
     expect(screen.getAllByText(/North Carolina Region/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/SEZF/i).length).toBeGreaterThan(0);
   });
 });
