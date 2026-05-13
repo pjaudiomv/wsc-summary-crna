@@ -1,0 +1,236 @@
+@import 'tailwindcss';
+
+@plugin 'flowbite/plugin';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* —— WSC 2026 / Our Common Welfare — design tokens —— */
+@theme {
+  --color-paper: #f4ead5;
+  --color-paper-warm: #efe1c3;
+  --color-paper-deep: #e6d4ab;
+  --color-ink: #1a1933;
+  --color-ink-soft: #2b294a;
+  --color-burgundy: #7b2d26;
+  --color-tangerine: #e8743b;
+  --color-marigold: #f5b82e;
+  --color-teal: #3b8c82;
+  --color-teal-deep: #2a5e57;
+  --color-sage: #a8b789;
+  --color-rust: #c44e1f;
+  --color-plum: #4d2d6f;
+  --color-cream: #fbf6e8;
+
+  --color-primary-50: #fff5f2;
+  --color-primary-100: #fff1ee;
+  --color-primary-200: #ffe4de;
+  --color-primary-300: #ffd5cc;
+  --color-primary-400: #ffbcad;
+  --color-primary-500: #e8743b;
+  --color-primary-600: #c44e1f;
+  --color-primary-700: #a23a17;
+  --color-primary-800: #7b2d26;
+  --color-primary-900: #4d1c10;
+
+  --color-secondary-50: #f0f9ff;
+  --color-secondary-100: #e0f2fe;
+  --color-secondary-200: #bae6fd;
+  --color-secondary-300: #7dd3fc;
+  --color-secondary-400: #38bdf8;
+  --color-secondary-500: #0ea5e9;
+  --color-secondary-600: #0284c7;
+  --color-secondary-700: #0369a1;
+  --color-secondary-800: #075985;
+  --color-secondary-900: #0c4a6e;
+
+  --font-display: 'Fraunces', 'Cooper Black', Georgia, serif;
+  --font-groove: 'Bagel Fat One', 'Bowlby One', 'Cooper Black', serif;
+  --font-body: 'Newsreader', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@source '../node_modules/flowbite-svelte/dist';
+@source '../node_modules/flowbite-svelte-icons/dist';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+  body {
+    font-family: var(--font-body);
+    font-feature-settings: 'ss01', 'liga', 'kern';
+    font-variation-settings: 'opsz' 16;
+    background-color: var(--color-paper);
+    background-image:
+      radial-gradient(at 15% 5%, rgba(232, 116, 59, 0.08) 0px, transparent 50%), radial-gradient(at 85% 25%, rgba(59, 140, 130, 0.07) 0px, transparent 50%),
+      radial-gradient(at 50% 95%, rgba(77, 45, 111, 0.07) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.15 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  ::selection {
+    background: var(--color-marigold);
+    color: var(--color-ink);
+  }
+}
+
+/* —— typography utilities —— */
+.font-display {
+  font-family: var(--font-display);
+  font-variation-settings:
+    'opsz' 96,
+    'SOFT' 50;
+}
+.font-groove {
+  font-family: var(--font-groove);
+}
+.font-body {
+  font-family: var(--font-body);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* —— retro stacked-shadow display text —— */
+.stack-shadow {
+  color: var(--color-cream);
+  text-shadow:
+    1px 1px 0 var(--color-burgundy),
+    3px 3px 0 var(--color-rust),
+    6px 6px 0 var(--color-tangerine),
+    9px 9px 0 var(--color-marigold),
+    12px 12px 0 var(--color-teal),
+    15px 15px 0 var(--color-plum);
+  letter-spacing: -0.02em;
+}
+.stack-shadow-sm {
+  color: var(--color-cream);
+  text-shadow:
+    1px 1px 0 var(--color-burgundy),
+    2px 2px 0 var(--color-rust),
+    4px 4px 0 var(--color-tangerine),
+    6px 6px 0 var(--color-marigold);
+}
+
+/* —— diagonal rainbow stripe band —— */
+.rainbow-band {
+  background: repeating-linear-gradient(
+    115deg,
+    var(--color-tangerine) 0 28px,
+    var(--color-marigold) 28px 56px,
+    var(--color-teal) 56px 84px,
+    var(--color-paper-deep) 84px 112px,
+    var(--color-burgundy) 112px 140px,
+    var(--color-plum) 140px 168px
+  );
+}
+
+/* —— scribbled underline accent —— */
+.scribble {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 12'><path d='M2 8 Q 75 2, 150 7 T 298 5' fill='none' stroke='%23e8743b' stroke-width='3' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 100%;
+  padding-bottom: 0.15em;
+}
+
+/* —— editorial drop cap —— */
+.dropcap::first-letter {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 4.5em;
+  line-height: 0.85;
+  float: left;
+  padding: 0.05em 0.1em 0 0;
+  color: var(--color-burgundy);
+  font-variation-settings:
+    'opsz' 144,
+    'SOFT' 50;
+}
+
+/* —— ticket / stamp card —— */
+.ticket {
+  position: relative;
+  background: var(--color-cream);
+  border: 1.5px solid var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
+}
+.ticket-dashed {
+  border-style: dashed;
+}
+
+/* —— halftone dots backdrop —— */
+.halftone {
+  background-image: radial-gradient(circle at 1px 1px, var(--color-ink) 1px, transparent 0);
+  background-size: 10px 10px;
+}
+
+/* —— consensus bar —— */
+.bar-track {
+  background: rgba(26, 25, 51, 0.08);
+  border: 1px solid rgba(26, 25, 51, 0.15);
+}
+
+/* —— gentle reveal on first paint —— */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rise {
+  animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate(-1.2deg);
+  }
+  50% {
+    transform: rotate(1.2deg);
+  }
+}
+.wobble {
+  animation: wobble 6s ease-in-out infinite;
+}
+
+@keyframes glide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* —— scrollbar nice-to-have —— */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-paper-warm);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-burgundy);
+  border: 3px solid var(--color-paper-warm);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-tangerine);
+}
