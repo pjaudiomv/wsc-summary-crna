@@ -549,7 +549,7 @@ export const carolinasItems = [
     type: 'nominated',
     region: 'North Carolina Region',
     title: 'Jacob S. — Stood for Cofacilitator',
-    detail: 'Jacob S. stood for Cofacilitator alongside Tina N. of Region 51. Tina was elected.'
+    detail: "NC's Regional Delegate Jacob S. also stood for Cofacilitator alongside Tina N. of Region 51. Tina was elected."
   },
   {
     type: 'idea',

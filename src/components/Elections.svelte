@@ -17,7 +17,7 @@
       <Reveal delay={120}>
         <p class="font-body text-ink-soft text-lg leading-relaxed">
           Ten trusted servants elected to the World Board, three to the Human Resource Panel, one to Cofacilitator. The neighboring <em class="text-burgundy">North Carolina Region</em> had two members
-          stand for service this cycle — <em class="text-burgundy">Jessica B.</em> elected to the World Board, and <em class="text-burgundy">Jacob S.</em> stood for Cofacilitator.
+          stand for service this cycle — <em class="text-burgundy">Jessica B.</em> elected to the World Board, and NC's RD <em class="text-burgundy">Jacob S.</em> stood for Cofacilitator.
         </p>
       </Reveal>
     </div>
@@ -78,7 +78,7 @@
             {/each}
           </ul>
           <div class="border-ink/30 font-body text-ink-soft mt-3 border-t border-dashed pt-3 text-[13px] italic">
-            <em class="text-burgundy not-italic">Jacob S. of the North Carolina Region</em> also stood for service in this position.
+            <em class="text-burgundy not-italic">Jacob S., NC Region RD</em>, also stood for service in this position.
           </div>
         </div>
       </Reveal>

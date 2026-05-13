@@ -1,6 +1,7 @@
 <script lang="ts">
   import Reveal from '@components/Reveal.svelte';
   import { carolinasItems } from '@lib/data';
+  import table from '@assets/carolinas-table.jpeg';
 
   const palette = ['bg-tangerine', 'bg-teal', 'bg-burgundy'];
   const ink = ['text-cream', 'text-cream', 'text-cream'];
@@ -26,13 +27,34 @@
         <div class="lg:col-span-4">
           <Reveal delay={120}>
             <p class="font-body text-cream/80 text-base leading-relaxed">
-              Our neighbors had three of this conference's most newsworthy moments — worth flagging because the Carolinas share members, sponsorships, and conventions across the state line.
+              Three newsworthy moments — worth flagging because the Carolinas share members, sponsorships, and conventions across the state line.
             </p>
           </Reveal>
         </div>
       </div>
 
-      <div class="mt-12 grid gap-5 md:grid-cols-3">
+      <Reveal delay={220} class="mt-12">
+        <div class="grid items-center gap-8 lg:grid-cols-12">
+          <figure class="bg-cream rotate-[1.5deg] p-3 pb-10 shadow-[8px_8px_0_rgba(255,255,255,0.08)] lg:col-span-7">
+            <img src={table} alt="Four delegates from the Carolina Region and the North Carolina Region seated together at the conference table" loading="lazy" class="block h-auto w-full" />
+            <figcaption class="text-ink/80 font-display mt-3 px-2 text-sm italic">
+              At the table — <span class="text-burgundy font-semibold not-italic">Carolina Region</span> (Patrick J., RD · Jody T., AD) seated with
+              <span class="text-burgundy font-semibold not-italic">North Carolina Region</span> (Jacob S., RD · Jonathan B., AD). Four delegates, one corner of the room.
+            </figcaption>
+          </figure>
+          <div class="lg:col-span-5">
+            <div class="text-marigold font-mono text-[10px] tracking-widest uppercase">Two regions · one state line</div>
+            <p class="font-display text-cream mt-2 text-2xl leading-snug italic">
+              Across the floor, the Carolinas were a four-person bench. We sat together, broke into different small-groups for discussion, and traded notes after every session.
+            </p>
+            <p class="font-body text-cream/75 mt-4 text-[15px] leading-relaxed">
+              Worth noting for ASCs back home: the relationship between our regions is real and active. Several of the items we're bringing back to you will land on NC floors too.
+            </p>
+          </div>
+        </div>
+      </Reveal>
+
+      <div class="mt-14 grid gap-5 md:grid-cols-3">
         {#each carolinasItems as item, i (item.title)}
           <Reveal delay={i * 110}>
             <article class="border-cream/15 bg-ink-soft/40 relative h-full overflow-hidden border p-7 backdrop-blur-sm">

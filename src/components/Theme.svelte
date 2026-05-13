@@ -1,5 +1,6 @@
 <script lang="ts">
   import Reveal from '@components/Reveal.svelte';
+  import poster from '@assets/wsc-50yrs-patrick.jpeg';
 </script>
 
 <section id="theme" class="relative isolate overflow-hidden px-6 py-28 sm:px-12 lg:px-20 lg:pl-12">
@@ -20,6 +21,15 @@
           <div class="border-ink/40 border-t pt-2 text-right"><span class="text-burgundy">★</span> 2026</div>
         </div>
         <div class="font-display text-ink-soft mt-4 text-base italic">50 years of the World Service Conference.</div>
+      </Reveal>
+
+      <Reveal delay={220} class="mt-10">
+        <figure class="bg-cream relative inline-block max-w-sm rotate-[-2.5deg] p-3 pb-12 shadow-[6px_6px_0_var(--color-ink)]">
+          <img src={poster} alt="Patrick standing in front of the 50 Years of WSC commemorative poster" loading="lazy" class="block h-auto w-full" />
+          <figcaption class="text-ink/70 font-display absolute right-0 bottom-2 left-0 px-3 text-center text-sm italic">
+            Patrick at the <span class="text-burgundy">50 Years of WSC</span> poster · 1976 — 2026
+          </figcaption>
+        </figure>
       </Reveal>
     </div>
     <div class="lg:col-span-7">

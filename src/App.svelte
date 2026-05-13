@@ -4,6 +4,7 @@
   import Hero from '@components/Hero.svelte';
   import Glance from '@components/Glance.svelte';
   import Theme from '@components/Theme.svelte';
+  import GroupPhoto from '@components/GroupPhoto.svelte';
   import Carolina from '@components/Carolina.svelte';
   import Decided from '@components/Decided.svelte';
   import Failed from '@components/Failed.svelte';
@@ -21,6 +22,7 @@
   <Hero />
   <Glance />
   <Theme />
+  <GroupPhoto />
   <Carolina />
   <Decided />
   <Failed />
