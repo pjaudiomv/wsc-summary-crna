@@ -99,11 +99,19 @@
         <div class="lg:col-span-4">
           <h3 class="font-display text-ink text-3xl"><em>NA meetings around the world.</em></h3>
           <p class="font-body text-ink-soft mt-3 text-base leading-relaxed">
-            78,945 weekly meetings worldwide, up 9% from 2023. The single largest year-over-year gain came from <strong class="text-burgundy">Africa</strong> (+38%) and
-            <strong class="text-burgundy">Eastern Europe</strong> (+36%). USA was flat at +1%.
+            78,945 weekly meetings worldwide. The long-run picture is more honest than any single year: per-cycle <strong class="text-ink">average growth across 2010 – 2026</strong> shows
+            <strong class="text-burgundy">Russia</strong>
+            (+41%), <strong class="text-burgundy">Eastern Europe</strong> (+21%), and <strong class="text-burgundy">South America / Brazil</strong> (+14% each) leading the long-run trend. The
+            <strong class="text-burgundy">USA</strong> is flat-to-shrinking on average (–1%).
           </p>
         </div>
         <div class="lg:col-span-8">
+          <div class="border-ink/15 text-ink/50 mb-2 grid items-baseline gap-3 border-b pb-2 font-mono text-[9px] tracking-widest uppercase md:grid-cols-[8rem_1fr_5rem_4rem]">
+            <div>Region</div>
+            <div>Meetings (2026)</div>
+            <div class="text-right md:text-left">Count</div>
+            <div>Avg growth</div>
+          </div>
           <ul class="grid gap-2">
             {#each meetingsByRegion as r (r.region)}
               <li class="grid items-center gap-3 md:grid-cols-[8rem_1fr_5rem_4rem]">
@@ -118,6 +126,7 @@
               </li>
             {/each}
           </ul>
+          <div class="text-ink/50 mt-2 font-mono text-[9px] tracking-widest uppercase">Avg growth · per-cycle average across 8 surveys, 2010 — 2026</div>
         </div>
       </div>
     </div>

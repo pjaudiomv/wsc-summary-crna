@@ -578,19 +578,21 @@ export const budget = {
   ]
 };
 
+// Average growth = the per-cycle average across the 2010–2026 surveys (8 data points),
+// not the latest 2023→2026 delta. Long-run trend is the truer signal.
 export const meetingsByRegion = [
-  { region: 'Western Europe', count: 5537, growth: '+23%', share: '7%' },
-  { region: 'Iran', count: 25613, growth: '+8%', share: '32%' },
-  { region: 'Middle-East', count: 849, growth: '+1%', share: '1%' },
-  { region: 'Africa', count: 470, growth: '+38%', share: '0.6%' },
-  { region: 'USA', count: 23769, growth: '+1%', share: '30%' },
-  { region: 'Canada', count: 1666, growth: '+24%', share: '2%' },
-  { region: 'Central America', count: 3821, growth: '+24%', share: '5%' },
+  { region: 'Western Europe', count: 5537, growth: '+10%', share: '7%' },
+  { region: 'Iran', count: 25613, growth: '+12%', share: '32%' },
+  { region: 'Middle-East', count: 849, growth: '+10%', share: '1%' },
+  { region: 'Africa', count: 470, growth: '+12%', share: '0.6%' },
+  { region: 'USA', count: 23769, growth: '-1%', share: '30%' },
+  { region: 'Canada', count: 1666, growth: '+5%', share: '2%' },
+  { region: 'Central America', count: 3821, growth: '+3%', share: '5%' },
   { region: 'South America', count: 3333, growth: '+14%', share: '4%' },
-  { region: 'Brazil', count: 5028, growth: '+5%', share: '6%' },
-  { region: 'Eastern Europe', count: 1179, growth: '+36%', share: '1%' },
-  { region: 'Russia', count: 4919, growth: '+26%', share: '6%' },
-  { region: 'Asia Pacific', count: 2761, growth: '+16%', share: '3%' }
+  { region: 'Brazil', count: 5028, growth: '+14%', share: '6%' },
+  { region: 'Eastern Europe', count: 1179, growth: '+21%', share: '1%' },
+  { region: 'Russia', count: 4919, growth: '+41%', share: '6%' },
+  { region: 'Asia Pacific', count: 2761, growth: '+8%', share: '3%' }
 ];
 
 export const sections = [
