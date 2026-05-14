@@ -2,6 +2,7 @@
   import Reveal from '@components/Reveal.svelte';
   import { carolinasItems } from '@lib/data';
   import table from '@assets/carolinas-table.jpeg';
+  import translators from '@assets/carolinas-translators.jpeg';
 
   const palette = ['bg-tangerine', 'bg-teal', 'bg-burgundy'];
   const ink = ['text-cream', 'text-cream', 'text-cream'];
@@ -40,8 +41,8 @@
             <img
               src={table}
               alt="Four delegates from the Carolina Region and the North Carolina Region seated together at the conference table"
-              width="3392"
-              height="4066"
+              width="1168"
+              height="1400"
               loading="lazy"
               decoding="async"
               class="block h-auto w-full"
@@ -60,6 +61,38 @@
               Worth noting for ASCs back home: the relationship between our regions is real and active. Several of the items we're bringing back to you will land on NC floors too.
             </p>
           </div>
+        </div>
+      </Reveal>
+
+      <Reveal delay={300} class="mt-10">
+        <div class="grid items-center gap-8 lg:grid-cols-12">
+          <div class="order-2 lg:order-1 lg:col-span-5">
+            <div class="text-marigold font-mono text-[10px] tracking-widest uppercase">Low Country in the booth</div>
+            <p class="font-display text-cream mt-2 text-2xl leading-snug italic">
+              And one of the conference translators — <span class="text-marigold not-italic">André</span> — is one of ours, from the Low Country Area.
+            </p>
+            <p class="font-body text-cream/75 mt-4 text-[15px] leading-relaxed">
+              André and his brother <span class="text-cream">Thiago</span> handled Brazilian Portuguese interpretation from the booth all week. Brazil Central, HOW Brazil, Nordeste Brazil, Rio Grande
+              do Sul, and Region 10 Brazil — a fellowship of <span class="text-cream">over 5,000 weekly meetings</span> — spoke and voted on every motion this week, with our Low Country member helping carry
+              the message across the language line.
+            </p>
+          </div>
+          <figure class="bg-cream order-1 rotate-[-1.5deg] p-3 pb-10 shadow-[8px_8px_0_rgba(255,255,255,0.08)] lg:order-2 lg:col-span-7">
+            <img
+              src={translators}
+              alt="Jody T. and Patrick J. of the Carolina Region with translators André and Thiago"
+              width="1800"
+              height="1066"
+              loading="lazy"
+              decoding="async"
+              class="block h-auto w-full"
+            />
+            <figcaption class="text-ink/80 font-display mt-3 px-2 text-sm italic">
+              From left — <span class="text-burgundy font-semibold not-italic">Jody T.</span> (Carolina AD), <span class="text-burgundy font-semibold not-italic">Patrick J.</span> (Carolina RD), with
+              <span class="text-burgundy font-semibold not-italic">André</span>
+              and <span class="text-burgundy font-semibold not-italic">Thiago</span> — Brazilian Portuguese translators · André also Low Country Area.
+            </figcaption>
+          </figure>
         </div>
       </Reveal>
 

@@ -1,6 +1,7 @@
 <script lang="ts">
   import Reveal from '@components/Reveal.svelte';
   import { failedMotions } from '@lib/data';
+  import booth from '@assets/translators-booth.jpeg';
 
   function pctNum(s?: string) {
     if (!s) return 0;
@@ -71,6 +72,35 @@
           Motion #5 — replace human live language interpretation with AI — failed at the Initial Straw Poll with only 18.32% support. The body then voted <em class="text-ink">not</em> to proceed to amendments
           (challenged by 92–37; the cofacilitator decision stood at 70.23%). Two amendments had been prepared — Arkansas et al. would have made it a research/pilot for CP webinars only, and Brazil Region
           would have made it a feasibility study supporting interpreters at future conferences. Neither was heard.
+        </p>
+      </div>
+    </div>
+  </Reveal>
+
+  <Reveal delay={400} class="mt-12">
+    <div class="grid items-center gap-8 lg:grid-cols-12">
+      <figure class="bg-cream rotate-[-1.5deg] p-3 pb-10 shadow-[8px_8px_0_var(--color-ink)] lg:col-span-7">
+        <img
+          src={booth}
+          alt="André and his brother Thiago, Brazilian Portuguese translators, working in the WSC 2026 translation booth"
+          width="1800"
+          height="1350"
+          loading="lazy"
+          decoding="async"
+          class="block h-auto w-full"
+        />
+        <figcaption class="text-ink/80 font-display mt-3 px-2 text-sm italic">
+          The faces behind the headsets — <span class="text-burgundy font-semibold not-italic">André</span> (Low Country Area, Carolina Region) and his brother
+          <span class="text-burgundy font-semibold not-italic">Thiago</span>, Brazilian Portuguese translators in the booth.
+        </figcaption>
+      </figure>
+      <div class="lg:col-span-5">
+        <div class="text-burgundy font-mono text-[10px] tracking-widest uppercase">Why the vote landed where it did</div>
+        <p class="font-display text-ink mt-2 text-2xl leading-snug italic">
+          The interpreters are members. They're the reason 31 languages can sit at the same table — and the reason Motion #5 was unlikely to clear consensus in this room.
+        </p>
+        <p class="font-body text-ink-soft mt-4 text-[15px] leading-relaxed">
+          One of them is from our own Low Country Area. Translators in the booth, hours of work, a deeply human bridge between regions. The body wasn't ready to trade that for software.
         </p>
       </div>
     </div>

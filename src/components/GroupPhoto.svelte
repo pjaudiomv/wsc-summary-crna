@@ -10,8 +10,8 @@
     <img
       src={photo}
       alt="WSC 2026 participants gathered together — delegates, alternates, World Board, HRP, cofacilitators and translators"
-      width="2560"
-      height="1828"
+      width="1800"
+      height="1285"
       decoding="async"
       class="block h-auto w-full"
     />
